@@ -147,6 +147,8 @@ Credits/docker.com.svg)](https://docker.com/)
 [![image](
 Credits/toml.io.svg)](https://toml.io/)  
 [![image](
+Credits/wasmer.io.svg)](https://wasmer.io/)  
+[![image](
 Credits/wasmcloud.com.svg)](https://wasmcloud.com/)  
 [![image](
 Credits/Java-docs.oracle.com.svg)](https://docs.oracle.com/java/)  
