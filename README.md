@@ -147,6 +147,8 @@ Credits/docker.com.svg)](https://docker.com/)
 [![image](
 Credits/toml.io.svg)](https://toml.io/)  
 [![image](
+Credits/deno.com.svg)](https://deno.com/)  
+[![image](
 Credits/wasmer.io.svg)](https://wasmer.io/)  
 [![image](
 Credits/wasmcloud.com.svg)](https://wasmcloud.com/)  
