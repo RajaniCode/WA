@@ -5,7 +5,7 @@
 ###########################################################################################################################
 ***************************************************************************************************************************
 
-# Emscripten # WebAssembly (Wasm) # emsdk # emcc # Node.js # HTML # em++ # Python # Web Audio
+# Emscripten # WebAssembly (Wasm) # emsdk # emcc # em++ # Node.js # HTML # Python # Web Audio
 
 ***************************************************************************************************************************
 [
@@ -23,6 +23,8 @@
 % source ./emsdk_env.sh
 
 % emcc --version
+
+% em++ --version
 
 # C
 
@@ -94,7 +96,9 @@ int main() {
 % curl http://127.0.0.1:8000
 % open http://127.0.0.1:8000
 ===========================================================================================================================
+
 # Emscripten # WebAssembly (Wasm) # em++ # Python # Web Audio
+
 ===========================================================================================================================
 [
 % cd $HOME
@@ -163,7 +167,7 @@ http://127.0.0.1:8000/test/test.html
 
 ***************************************************************************************************************************
 
-# C # WebAssembly (wasm) # Emscripten # emcc # Node.js # HTML
+# C/C++ # WebAssembly (wasm) # Emscripten # emcc # em++ # Node.js # HTML
 
 ***************************************************************************************************************************
 [
@@ -177,6 +181,8 @@ http://127.0.0.1:8000/test/test.html
 % brew install emscripten
 
 % emcc --version
+
+% em++ --version
 
 % nano index.c  
 [
@@ -717,7 +723,9 @@ Target: arm64-apple-macosx15.0
 Hello, world!
 ]
 ===========================================================================================================================
+
 # Swift # WebAssembly (wasm) # SwiftWasm # WebAssembly Text Format
+
 ===========================================================================================================================
 [
 % cd $HOME
@@ -867,7 +875,9 @@ Guest module printed: Hola From WebAssembly Text Format!!!
 Returned value: [WasmTypes.Value.i64(3628800)]
 ]
 ===========================================================================================================================
+
 # Swift # WebAssembly (wasm) # SwiftWasm # Browser App
+
 ===========================================================================================================================
 [
 % cd $HOME
@@ -1147,8 +1157,8 @@ extension FilePath {
 % sudo swift run Server
 ===========================================================================================================================
 
-===========================================================================================================================
 # Swift # WebAssembly (wasm) # SwiftWasm # Browser App # Docker
+
 ===========================================================================================================================
 ---------------------------------------------------------------------------------------------------------------------------
 # Docker # Server
@@ -1630,7 +1640,7 @@ wasmFunc();
 
 ***************************************************************************************************************************
 
-# Rust # WebAssembly (wasm) # cargo # wasm-pack
+# Rust # WebAssembly (wasm) # cargo # TOML # wasm-pack
 
 ***************************************************************************************************************************
 [
@@ -1967,22 +1977,20 @@ Math: 5 x 7 = 35
 
 ***************************************************************************************************************************
 
-# Java # WebAssembly (wasm) # GraalVM # OpenJDK # Gradle # Apache Maven
+# Java # WebAssembly (wasm) # GraalVM
 
 ***************************************************************************************************************************
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # Apache Maven # JAVA_HOME # M2_HOME # M2 # PATH # MAVEN_OPTS # GraalVM # JVM # WARNING # For GraalVM App
+# Java # WebAssembly (wasm) # GraalVM # Apache Maven # JVM WARNING For GraalVM Apps
 
 ===========================================================================================================================
-# JVM # WARNING # For GraalVM App
+# JVM WARNING For GraalVM Apps
 [
 % export JAVA_HOME="$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home"
 ]
-
 # GraalVM
 % export JAVA_HOME="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home"
-
 % export M2_HOME="$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9"
 % export M2="$M2_HOME/bin"
 % export PATH=$PATH:"$M2:$JAVA_HOME/bin"
@@ -2008,7 +2016,7 @@ OS name: "mac os x", version: "15.1", arch: "aarch64", family: "mac"
 ]
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # OpenJDK # Gradle # Apache Maven # GraalVM
+# Java # WebAssembly (wasm) # GraalVM # native-image
 
 ===========================================================================================================================
 % export PATH="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home/bin/:$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
@@ -2052,11 +2060,7 @@ native-image 23.0.1 2024-10-15
 GraalVM Runtime Environment Oracle GraalVM 23.0.1+11.1 (build 23.0.1+11-jvmci-b01)
 Substrate VM Oracle GraalVM 23.0.1+11.1 (build 23.0.1+11, serial gc, compressed references)
 ]
-===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # OpenJDK # native-image
-
-===========================================================================================================================
 [
 % cd $HOME
 ]
@@ -2089,7 +2093,7 @@ Hello, World!
 ]
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # OpenJDK # Gradle
+# Java # WebAssembly (wasm) # GraalVM # sdk install java 23-graal # WebAssembly Text Format # Apache Maven Wrapper # Gradle Wrapper 
 
 ===========================================================================================================================
 [
@@ -2097,6 +2101,26 @@ Hello, World!
 ]
 
 % cd Java
+
+% mkdir -p SDKGraalVM; pushd SDKGraalVM
+
+% sdk version
+
+% sdk install java 23-graal 
+
+% java --version
+[
+java 23 2024-09-17
+Java(TM) SE Runtime Environment Oracle GraalVM 23+37.1 (build 23+37-jvmci-b01)
+Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 23+37.1 (build 23+37-jvmci-b01, mixed mode, sharing)
+]
+
+% native-image --version
+[
+native-image 23 2024-09-17
+GraalVM Runtime Environment Oracle GraalVM 23+37.1 (build 23+37-jvmci-b01)
+Substrate VM Oracle GraalVM 23+37.1 (build 23+37, serial gc, compressed references)
+]
 
 # https://github.com/graalvm/graal-languages-demos/tree/main # zip # main
 [
@@ -2112,46 +2136,81 @@ Hello, World!
 
 % ls
 
-# Gradle
+# Maven
+% ./mvnw test
 
-% ./gradlew
+% ./mvnw exec:java
+
+% jar cvf target/demo-1.0-SNAPSHOT.jar com/example/App.class
+
+# Gradle
 
 % ./gradlew test
 
-% ls target/demo-1.0-SNAPSHOT.jar
-
-[
-% java -jar target/demo-1.0-SNAPSHOT.jar
-no main manifest attribute, in target/demo-1.0-SNAPSHOT.jar
-]
-
-% jar tvf target/demo-1.0-SNAPSHOT.jar
-
 % ./gradlew run
 
+/Users/rajaniapple
 # Test Results # Chrome
-% open -n -a "Google Chrome" --args "--new-window" "file:///$HOME/Desktop/GitHub/JavaScript-1/WebAssembly/Java/graal-languages-demos-main/graalwasm/graalwasm-starter/build/reports/tests/test/index.html"
+% open -n -a "Google Chrome" --args "--new-window" "file:///$HOME/Desktop/GitHub/WebAssembly-Add/Java/SDKGraalVM/graal-languages-demos-main/graalwasm/graalwasm-starter/build/reports/tests/test/index.html"
 
-# gradlew test
-===========================================================================================================================
-
-# Java # WebAssembly (wasm) # GraalVM # OpenJDK # Gradle # WebAssembly Text Format
-
-===========================================================================================================================
-## Implementation Details
-The WebAssembly is stored in the resource file `add-two.wasm`.
-You can examine its textual representation in the resource file `add-two.wat`.
-If you want to experiment with and tweak the WebAssembly module, you will need to rebuild the `add-two.wasm` file from the `add-two.wat` file.
-For that, you can use the `wat2wasm` tool from the [wabt toolkit](https://github.com/WebAssembly/wabt).
-You can also use [this web app](https://webassembly.github.io/wabt/demo/wat2wasm/) to run `wat2wasm` in your browser instead of installing `wabt`.
-
-# tweak the WebAssembly module
-
+% cat target/surefire-reports/com.example.AppTest.txt
 [
-# brew install wabt
+-------------------------------------------------------------------------------
+Test set: com.example.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.330 s -- in com.example.AppTest
 ]
 
-% cat build/resources/main/com/example/add-two.wat # https://webassembly.github.io/wabt/demo/wat2wasm/
+% sdk uninstall java 23-graal 
+
+---------------------------------------------------------------------------------------------------------------------------
+
+# Java # WebAssembly (wasm) # GraalVM # WebAssembly Text Format
+
+---------------------------------------------------------------------------------------------------------------------------
+
+# Implementation Details
+# The WebAssembly is stored in the resource file `add-two.wasm`.
+% cat build/resources/main/com/example/add-two.wat
+[
+(module
+  (func (export "addTwo") (param i32 i32) (result i32)
+    local.get 0
+    local.get 1
+    i32.add))%                                       
+]
+# Examine its textual representation in the resource file `add-two.wat`.
+# Tweak the WebAssembly module by rebuilding the `add-two.wasm` file from the `add-two.wat` file.
+# For that, you can use the `wat2wasm` tool from the [wabt toolkit](https://github.com/WebAssembly/wabt).
+
+# tweak the WebAssembly module
+[
+% brew install wabt
+
+% brew list wabt
+]
+
+% mkdir -p ~/Desktop/GitHub/WebAssembly-Add/Java/SDKGraalVM/TweakWABT
+
+% cp build/resources/main/com/example/add-two.wat ~/Desktop/GitHub/WebAssembly-Add/Java/SDKGraalVM/TweakWABT
+
+% cd ~/Desktop/GitHub/WebAssembly-Add/Java/SDKGraalVM/TweakWABT
+
+% ls
+
+# Parse add-two.wat and write to .wasm binary file with the same name
+% wat2wasm add-two.wat
+
+% ls
+
+% cat add-two.wasm
+
+# Parse add-two.wat and write to binary file add-two.wasm
+% mkdir -p binary
+
+% wat2wasm add-two.wat -o binary/add-two.wasm
+
+# build/resources/main/com/example/add-two.wat
 # WAT # func (export "addTwo") 
 (module
   (func (export "addTwo") (param i32 i32) (result i32)
@@ -2177,7 +2236,6 @@ for (let i = 0; i < 10; i++) {
 16
 18
 
-# https://webassembly.github.io/wabt/demo/wat2wasm/
 # WAT # func $fac (export "fac")
 (module
   (func $fac (export "fac") (param f64) (result f64)
@@ -2396,7 +2454,7 @@ console.log(new Uint8Array(mem.buffer, 0, 25));
 0,0,22,22,0,0,66,66,66,66,88,55,55,55,55,55,55,55,0,0,0,0,0,0,0
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # GraalWasm # mvn # Embed C in Java # Embedding GraalWasm in Java
+# Java # WebAssembly (wasm) # GraalVM # GraalWasm # emcc # em++ # Embed C in Java # Embedding GraalWasm in Java
 
 ===========================================================================================================================
 [ 
@@ -2461,9 +2519,12 @@ Copyright (C) 2014 the Emscripten authors (see AUTHORS.txt)
 This is free and open source software under the MIT license.
 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ]
-% where emcc
+% em++ --version
 [
-/opt/homebrew/bin/emcc
+emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 4.0.1-git
+Copyright (C) 2014 the Emscripten authors (see AUTHORS.txt)
+This is free and open source software under the MIT license.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ]
 # The exported functions must be prefixed by _. If you reference that function in the Java code, the exported name should not contain the underscore.
 % emcc --no-entry -s EXPORTED_FUNCTIONS=_floyd -o target/classes/com/example/floyd.wasm src/main/c/floyd.c
@@ -2881,13 +2942,10 @@ Using path to floyd.wasm
 [INFO] Finished at: 2025-01-15T00:30:06+05:30
 [INFO] ------------------------------------------------------------------------
 ]
-
 ===========================================================================================================================
 
-Java # WebAssembly (wasm) # GraalWasm # Spring Boot # Native Support # Spring Web # Gradle # Groovy # Kotlin # Maven
+# Java # WebAssembly (wasm) # GraalVM # Spring Boot # Native Support # Spring Web # Gradle # Groovy # Kotlin # Maven
 
-===========================================================================================================================
-# SampleApplication.java # SampleApplicationTests.java
 ===========================================================================================================================
 [
 % cd $HOME
@@ -3309,7 +3367,7 @@ GraalVM Native Support # Developer Tools
 % tar -xvzf sample.zip
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalWasm # GraalVM Community Edition Container Images # GraalJS  # Docker # Gradle # Kotlin
+# Java # WebAssembly (wasm) # GraalVM # Community Edition Container Images # GraalJS  # Docker # Gradle # Kotlin
 
 ===========================================================================================================================
 # Embed JavaScript code in Java
@@ -3779,7 +3837,7 @@ ac8bda4c3e29   ghcr.io/graalvm/jdk-community:23   "/bin/bash"   50 minutes ago  
 # curl http://127.0.0.1:8000/build/reports/configuration-cache/epdnhkg79ckvlf6ffg3wohyky/90yloe4enl5jpoby8emw3xn86/configuration-cache-report.html
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalWasm # GraalVM # GraalPy # Gradle # Kotlin
+# Java # WebAssembly (wasm) # GraalVM # GraalPy # Gradle # Kotlin
 
 ===========================================================================================================================
 # Embed Python code in Java
@@ -4125,7 +4183,7 @@ configuration-cache-report.html
 % open http://127.0.0.1:8000/build/reports/configuration-cache/2cwxuksyd46298v3rqxedy8lo/393dzv7bjf2telanpq126fhbf/configuration-cache-report.html
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalWasm # GraalVM # TruffleRuby # Gradle # Groovy
+# Java # WebAssembly (wasm) # GraalVM # TruffleRuby # Gradle # Groovy
 
 ===========================================================================================================================
 # Embed Ruby code in Java
@@ -4487,10 +4545,9 @@ configuration-cache-report.html
 % open http://127.0.0.1:8000/
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalWasm # GraalVM # Truffle # Espresso
+# Java # WebAssembly (wasm) # GraalVM # Truffle # Espresso
 
 ===========================================================================================================================
-
 [
 % cd $HOME
 ]
@@ -4541,7 +4598,7 @@ class App {
 
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalWasm # GraalVM # Truffle # Espresso # Spring Boot with Spring MVC and Spring Data JPA
+# Java # WebAssembly (wasm) # GraalVM # Truffle # Espresso # Spring Boot with Spring MVC and Spring Data JPA
 
 ===========================================================================================================================
 [
@@ -4819,9 +4876,12 @@ WHERE datistemplate = false;
 
 ***************************************************************************************************************************
 
-# Docker cleanup
+# Docker # Docker Desktop.app # Docker cleanup
 
 **************************************************************************************************************************
+
+% docker version
+
 % docker ps --all --quiet
 % docker stop $(docker ps -a -q)
 % docker rm $(docker ps -a -q) --force
@@ -4846,7 +4906,6 @@ WHERE datistemplate = false;
 % docker system info
 % docker system prune --all --volumes
 ***************************************************************************************************************************
-
 
 
 ***************************************************************************************************************************
@@ -5069,7 +5128,9 @@ export function math(x, y) {
 % curl http://127.0.0.1:8000
 % open http://127.0.0.1:8000
 ===========================================================================================================================
+
 # CS # WebAssembly (wasm) # dotnet # wasmbrowser
+
 ===========================================================================================================================
 [
 % cd $HOME
@@ -5079,7 +5140,7 @@ export function math(x, y) {
 
 # CS # WebAssembly (wasm) # dotnet # wasmbrowser
 [
-# Prerequisites  # JavaScript interop on WASM
+# Prerequisites # JavaScript interop on WASM
 % dotnet workload install wasm-tools
 # Experimental workload and project templates
 % dotnet workload install wasm-experimental
@@ -5098,7 +5159,9 @@ export function math(x, y) {
 # Terminal New Window
 # curl http(s) or open http(s) form dotnet run
 ===========================================================================================================================
+
 # CS # WebAssembly (wasm) # dotnet # wasmconsole # Node.js
+
 ===========================================================================================================================
 [
 % cd $HOME
@@ -5239,7 +5302,9 @@ sign in
 
 ***************************************************************************************************************************
 ===========================================================================================================================
+
 # Ruby # WebAssembly (wasm) # Browser
+
 ===========================================================================================================================
 [
 % cd $HOME
@@ -5506,7 +5571,9 @@ rand.to_f # => 0.123456789
 % curl http://127.0.0.1:8000/async_await_wasm_wasi.html
 % open http://127.0.0.1:8000/async_await_wasm_wasi.html
 ===========================================================================================================================
+
 # Ruby # WebAssembly (wasm) # WASI # ruby.wasm # wasmtime
+
 ===========================================================================================================================
 # Package Ruby application as a WASI application
 [
@@ -5561,7 +5628,9 @@ rand.to_f # => 0.123456789
 Ruby: ruby 3.3.3 (2024-06-12 revision f1c7b6f435) [wasm32-wasi]
 ]
 ===========================================================================================================================
+
 # Ruby # WebAssembly (wasm) # npm install --save @ruby/3.3-wasm-wasi @ruby/wasm-wasi # Node.js
+
 ===========================================================================================================================
 % mkdir -p NodeJS
 
