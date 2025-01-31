@@ -8,10 +8,6 @@
 # Emscripten # WebAssembly (Wasm) # emsdk # emcc # em++ # Node.js # HTML # Python # Web Audio
 
 ***************************************************************************************************************************
-[
-% cd $HOME
-]
-
 % git clone https://github.com/emscripten-core/emsdk.git
 
 % cd emsdk
@@ -100,10 +96,6 @@ int main() {
 # Emscripten # WebAssembly (Wasm) # em++ # Python # Web Audio
 
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
 % mkdir -p Emscripten
 
 % cd Emscripten
@@ -150,10 +142,6 @@ http://127.0.0.1:8000/test/test.html
 ===========================================================================================================================
 # Terminal New Window
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
 % cd Emscripten
 
 % cd emscripten/test/webaudio
@@ -170,10 +158,6 @@ http://127.0.0.1:8000/test/test.html
 # C/C++ # WebAssembly (wasm) # Emscripten # emcc # em++ # Node.js # HTML
 
 ***************************************************************************************************************************
-[
-% cd $HOME
-]
-
 % mkdir -p C
 
 % cd C
@@ -256,10 +240,6 @@ int main() {
 # TypeScript # WebAssembly (wasm) # AssemblyScript # npm # asc
 
 ***************************************************************************************************************************
-[
-% cd $HOME
-]
-
 % mkdir -p TypeScript
 
 % cd TypeScript
@@ -431,10 +411,6 @@ export PATH="$WASMTIME_HOME/bin:$PATH"
 ---------------------------------------------------------------------------------------------------------------------------
 # swift # swiftc
 ---------------------------------------------------------------------------------------------------------------------------
-[
-% cd $HOME
-]
-
 % mkdir -p Swift
 
 % cd Swift
@@ -626,12 +602,6 @@ export PATH="$WASMTIME_HOME/bin:$PATH"
 ---------------------------------------------------------------------------------------------------------------------------
 # Terminal New Window # wasmtime
 ---------------------------------------------------------------------------------------------------------------------------
-[
-% cd $HOME
-]
-
-% cd Swift
-
 % wasmtime --version
 
 # Run For Same Output As Above # Swift Run 
@@ -653,12 +623,6 @@ Swift >= 5.0
 # SwiftPM package to WebAssembly # SwiftPM # SwiftWasm
 ===========================================================================================================================
 # Terminal New Window 
-[
-% cd $HOME
-]
-
-% cd Swift
-
 % mkdir -p SwiftWasm
 
 % cd SwiftWasm
@@ -689,12 +653,6 @@ Hello, world!
 # SwiftPM package to WebAssembly # SwiftPM # Swift SDK # Default Swift
 ===========================================================================================================================
 # Terminal New Window 
-[
-% cd $HOME
-]
-
-% cd Swift
-
 % mkdir -p SwiftSDK
 
 % cd SwiftSDK
@@ -727,12 +685,6 @@ Hello, world!
 # Swift # WebAssembly (wasm) # SwiftWasm # WebAssembly Text Format
 
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
-% cd Swift
-
 # Swift
 % swift --version
 [
@@ -879,12 +831,6 @@ Returned value: [WasmTypes.Value.i64(3628800)]
 # Swift # WebAssembly (wasm) # SwiftWasm # Browser App
 
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
-% cd Swift
-
 # Swift
 % swift --version
 [
@@ -1142,12 +1088,6 @@ extension FilePath {
 }
 ]
 
-[
-% cd $HOME
-]
-
-% cd Swift
-
 % cd swift-for-wasm-examples-main/Guest
 
 % sudo ./build.sh
@@ -1163,12 +1103,6 @@ extension FilePath {
 ---------------------------------------------------------------------------------------------------------------------------
 # Docker # Server
 --------------------------------------------------------------------------------------------------------------------------
-[
-% cd $HOME
-]
-
-% cd Swift
-
 % mkdir -p Docker
 
 % cd Docker
@@ -1494,10 +1428,6 @@ Address: fdc4:f303:9324::254
 # Go # WebAssembly (wasm) # tinygo
 
 ***************************************************************************************************************************
-[
-% cd $HOME
-]
-
 % mkdir -p Go
 
 % cd Go
@@ -1643,10 +1573,6 @@ wasmFunc();
 # Rust # WebAssembly (wasm) # cargo # TOML # wasm-pack
 
 ***************************************************************************************************************************
-[
-% cd $HOME
-]
-
 % mkdir -p Rust
 
 % cd Rust
@@ -1773,10 +1699,6 @@ wasmFunc();
 # Python # WebAssembly (wasm) # Pyodide
 
 ***************************************************************************************************************************
-[
-% cd $HOME
-]
-
 % mkdir -p Python
 
 % cd Python
@@ -1881,10 +1803,6 @@ wasmFunc();
 ===========================================================================================================================
 # Pyodide
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
 % cd Python
 
 % wget https://github.com/pyodide/pyodide/releases/download/0.27.0/pyodide-0.27.0.tar.bz2
@@ -1982,15 +1900,11 @@ Math: 5 x 7 = 35
 ***************************************************************************************************************************
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # Apache Maven # JVM WARNING For GraalVM Apps
+# Java # WebAssembly (wasm) # GraalVM # native-image # Apache Maven
 
 ===========================================================================================================================
-# JVM WARNING For GraalVM Apps
-[
-% export JAVA_HOME="$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home"
-]
-# GraalVM
-% export JAVA_HOME="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home"
+# GraalVM 23.0.2 # Apache Maven 3.9.9
+% export JAVA_HOME="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.2+7.1/Contents/Home"
 % export M2_HOME="$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9"
 % export M2="$M2_HOME/bin"
 % export PATH=$PATH:"$M2:$JAVA_HOME/bin"
@@ -2001,35 +1915,53 @@ Math: 5 x 7 = 35
 
 % java --version
 [
-java 23.0.1 2024-10-15
-Java(TM) SE Runtime Environment Oracle GraalVM 23.0.1+11.1 (build 23.0.1+11-jvmci-b01)
-Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 23.0.1+11.1 (build 23.0.1+11-jvmci-b01, mixed mode, sharing)
+java 23.0.2 2025-01-21
+Java(TM) SE Runtime Environment Oracle GraalVM 23.0.2+7.1 (build 23.0.2+7-jvmci-b01)
+Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 23.0.2+7.1 (build 23.0.2+7-jvmci-b01, mixed mode, sharing)
 ]
 
 % mvn --version 
 [
 Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
 Maven home: /Users/rajaniapple/Downloads/Software/ApacheMaven/apache-maven-3.9.9
-Java version: 23.0.1, vendor: Oracle Corporation, runtime: /Users/rajaniapple/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home
+Java version: 23.0.2, vendor: Oracle Corporation, runtime: /Users/rajaniapple/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.2+7.1/Contents/Home
 Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "15.1", arch: "aarch64", family: "mac"
+]
+
+% native-image --version
+[
+native-image 23.0.2 2025-01-21
+GraalVM Runtime Environment Oracle GraalVM 23.0.2+7.1 (build 23.0.2+7-jvmci-b01)
+Substrate VM Oracle GraalVM 23.0.2+7.1 (build 23.0.2+7, serial gc, compressed references)
 ]
 ===========================================================================================================================
 
 # Java # WebAssembly (wasm) # GraalVM # native-image
 
 ===========================================================================================================================
-% export PATH="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home/bin/:$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
+# GraalVM 23.0.2 # Gradle 8.12 # Apache Maven 3.9.9 
+% export PATH="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.2+7.1/Contents/Home/bin/:$HOME/Downloads/Software/OpenJDK/JDK23.0.2/jdk-23.0.2.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
 
 % java --version
 [
-java 23.0.1 2024-10-15
-Java(TM) SE Runtime Environment Oracle GraalVM 23.0.1+11.1 (build 23.0.1+11-jvmci-b01)
-Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 23.0.1+11.1 (build 23.0.1+11-jvmci-b01, mixed mode, sharing)
+java 23.0.2 2025-01-21
+Java(TM) SE Runtime Environment Oracle GraalVM 23.0.2+7.1 (build 23.0.2+7-jvmci-b01)
+Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 23.0.2+7.1 (build 23.0.2+7-jvmci-b01, mixed mode, sharing)
 ]
 
 % gradle --version
 [
+Welcome to Gradle 8.12!
+
+Here are the highlights of this release:
+ - Enhanced error and warning reporting with the Problems API
+ - File-system watching support on Alpine Linux
+ - Build and test Swift 6 libraries and apps
+
+For more details see https://docs.gradle.org/8.12/release-notes.html
+
+
 ------------------------------------------------------------
 Gradle 8.12
 ------------------------------------------------------------
@@ -2040,8 +1972,8 @@ Revision:      a3cacb207fec727859be9354c1937da2e59004c1
 Kotlin:        2.0.21
 Groovy:        3.0.22
 Ant:           Apache Ant(TM) version 1.10.15 compiled on August 25 2024
-Launcher JVM:  23.0.1 (Oracle Corporation 23.0.1+11-jvmci-b01)
-Daemon JVM:    /Users/rajaniapple/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home (no JDK specified, using current Java home)
+Launcher JVM:  23.0.2 (Oracle Corporation 23.0.2+7-jvmci-b01)
+Daemon JVM:    /Users/rajaniapple/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.2+7.1/Contents/Home (no JDK specified, using current Java home)
 OS:            Mac OS X 15.1 aarch64
 ]
 
@@ -2049,20 +1981,16 @@ OS:            Mac OS X 15.1 aarch64
 [
 Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
 Maven home: /Users/rajaniapple/Downloads/Software/ApacheMaven/apache-maven-3.9.9
-Java version: 23.0.1, vendor: Oracle Corporation, runtime: /Users/rajaniapple/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home
+Java version: 23.0.2, vendor: Oracle Corporation, runtime: /Users/rajaniapple/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.2+7.1/Contents/Home
 Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "15.1", arch: "aarch64", family: "mac"
 ]
 
 % native-image --version
 [
-native-image 23.0.1 2024-10-15
-GraalVM Runtime Environment Oracle GraalVM 23.0.1+11.1 (build 23.0.1+11-jvmci-b01)
-Substrate VM Oracle GraalVM 23.0.1+11.1 (build 23.0.1+11, serial gc, compressed references)
-]
-
-[
-% cd $HOME
+native-image 23.0.2 2025-01-21
+GraalVM Runtime Environment Oracle GraalVM 23.0.2+7.1 (build 23.0.2+7-jvmci-b01)
+Substrate VM Oracle GraalVM 23.0.2+7.1 (build 23.0.2+7, serial gc, compressed references)
 ]
 
 % mkdir -p Java
@@ -2093,20 +2021,12 @@ Hello, World!
 ]
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # sdk install java 23-graal # WebAssembly Text Format # Apache Maven Wrapper # Gradle Wrapper 
+# Java # WebAssembly (wasm) # GraalVM # SDKMAN! # sdk install java 23-graal # native-image # Apache Maven Wrappper # Gradle Wrappper
 
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
-% cd Java
-
-% mkdir -p SDKGraalVM; pushd SDKGraalVM
-
 % sdk version
 
-% sdk install java 23-graal 
+% sdk install java 23-graal
 
 % java --version
 [
@@ -2115,6 +2035,14 @@ Java(TM) SE Runtime Environment Oracle GraalVM 23+37.1 (build 23+37-jvmci-b01)
 Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 23+37.1 (build 23+37-jvmci-b01, mixed mode, sharing)
 ]
 
+# REPL
+% jshell
+% jshell --enable-preview 
+> System.getProperty("java.version")
+> System.getProperty("java.vendor.version")
+> System.getProperty("java.vm.name")
+> /exit
+
 % native-image --version
 [
 native-image 23 2024-09-17
@@ -2122,11 +2050,15 @@ GraalVM Runtime Environment Oracle GraalVM 23+37.1 (build 23+37-jvmci-b01)
 Substrate VM Oracle GraalVM 23+37.1 (build 23+37, serial gc, compressed references)
 ]
 
+[
+% sdk uninstall java 23-graal --force
+]
+
+% mkdir -p SDKGraalVM; pushd SDKGraalVM
+
 # https://github.com/graalvm/graal-languages-demos/tree/main # zip # main
 [
 % wget --output-document=graal-languages-demos-main.zip https://github.com/graalvm/graal-languages-demos/archive/main.zip
-
-% ls
 
 % tar -xvzf graal-languages-demos-main.zip
 ]
@@ -2134,9 +2066,14 @@ Substrate VM Oracle GraalVM 23+37.1 (build 23+37, serial gc, compressed referenc
 
 % cd graal-languages-demos-main/graalwasm/graalwasm-starter
 
-% ls
-
-# Maven
+# Required for Apache Maven Wrapper and Gradle Wrappper # If java 23-graal is not installed
+[
+# Java 23.0.2
+% export PATH="$HOME/Downloads/Software/OpenJDK/JDK23.0.2/jdk-23.0.2.jdk/Contents/Home/bin/":$PATH
+# Or
+% export JAVA_HOME="$HOME/Downloads/Software/OpenJDK/JDK23.0.2/jdk-23.0.2.jdk/Contents/Home"
+]
+# Apache Maven
 % ./mvnw test
 
 % ./mvnw exec:java
@@ -2144,12 +2081,10 @@ Substrate VM Oracle GraalVM 23+37.1 (build 23+37, serial gc, compressed referenc
 % jar cvf target/demo-1.0-SNAPSHOT.jar com/example/App.class
 
 # Gradle
-
 % ./gradlew test
 
 % ./gradlew run
 
-/Users/rajaniapple
 # Test Results # Chrome
 % open -n -a "Google Chrome" --args "--new-window" "file:///$HOME/Desktop/GitHub/WebAssembly-Add/Java/SDKGraalVM/graal-languages-demos-main/graalwasm/graalwasm-starter/build/reports/tests/test/index.html"
 
@@ -2165,7 +2100,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.330 s -- in co
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-# Java # WebAssembly (wasm) # GraalVM # WebAssembly Text Format
+# Java # WebAssembly (wasm) # wabt # WebAssembly Text Format
 
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -2454,16 +2389,11 @@ console.log(new Uint8Array(mem.buffer, 0, 25));
 0,0,22,22,0,0,66,66,66,66,88,55,55,55,55,55,55,55,0,0,0,0,0,0,0
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # GraalWasm # emcc # em++ # Embed C in Java # Embedding GraalWasm in Java
+# Java # WebAssembly (wasm) # emcc # em++ # Embed C in Java # Embedding GraalWasm in Java
 
 ===========================================================================================================================
-[ 
-% cd $HOME
-]
-
-% cd Java
-
-% export PATH="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home/bin/:$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
+# Java 23.0.2 # Gradle 8.12 # Apache Maven 3.9.9 
+% export PATH="$HOME/Downloads/Software/OpenJDK/JDK23.0.2/jdk-23.0.2.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
 
 % java --version
 
@@ -2472,10 +2402,6 @@ console.log(new Uint8Array(mem.buffer, 0, 25));
 ]
 
 % mvn --version
-
-[
-% native-image --version
-]
 
 # Maven Archetype
 % mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5 -DgroupId=com.example -DartifactId=demo -DinteractiveMode=false
@@ -2512,6 +2438,9 @@ int main() {
 # C Code to WebAssembly
 # Compile the C code using the most recent version of the Emscripten compiler frontend
 % mkdir -p target/classes/com/example
+[
+% brew install emscripten
+]
 % emcc --version
 [
 emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74-git
@@ -2944,13 +2873,9 @@ Using path to floyd.wasm
 ]
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # Spring Boot # Native Support # Spring Web # Gradle # Groovy # Kotlin # Maven
+# Java # WebAssembly (wasm) # Spring Boot # Native Support # Spring Web # Gradle # Groovy # Kotlin # Apache Maven 
 
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
 #
 .
 ├── Gradle
@@ -2975,8 +2900,8 @@ Using path to floyd.wasm
 
 % mkdir -p sample && cd sample
 
-# JDK 23.0.1 # Gradle 8.11.1 # Maven 3.9.9
-% export PATH="$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.11.1/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
+# Java 23.0.2 # Gradle 8.12 # Apache Maven 3.9.9 
+% export PATH="$HOME/Downloads/Software/OpenJDK/JDK23.0.2/jdk-23.0.2.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
 
 % java --version
 
@@ -3289,9 +3214,7 @@ public class GraalVMController {
 % curl http://localhost:8080/graalvm
 % open http://localhost:8080/graalvm
 ===========================================================================================================================
-
 # Copy sample/src
-
 ===========================================================================================================================
 .
 ├── Gradle
@@ -3367,7 +3290,7 @@ GraalVM Native Support # Developer Tools
 % tar -xvzf sample.zip
 ===========================================================================================================================
 
-# Java # WebAssembly (wasm) # GraalVM # Community Edition Container Images # GraalJS  # Docker # Gradle # Kotlin
+# Java # WebAssembly (wasm) # GraalVM Container Image # GraalJS # Docker # Gradle # Kotlin
 
 ===========================================================================================================================
 # Embed JavaScript code in Java
@@ -3380,16 +3303,19 @@ try (Context context = Context.create()) {
 ]
 ===========================================================================================================================
 [
-% cd $HOME
+% export PATH="/Applications/Docker.app/Contents/Resources/bin/:/Applications/Docker.app/Contents/Resources/cli-plugins/":$PATH
 ]
-
 % docker --version
 
-# docker Start
+% docker version
+
 % docker info
 
 # Container image for GraalVM JDK for a specific JDK feature version 23
+[
 % docker pull ghcr.io/graalvm/jdk-community:23
+]
+% sudo docker pull ghcr.io/graalvm/jdk-community:23
 
 # Or use the container image as the base image in the Dockerfile
 [
@@ -3408,29 +3334,51 @@ FROM ghcr.io/graalvm/native-image-community:23-muslib
 ]
 
 [
+% docker container list --all
+]
+
+% docker image list --all
+[
+REPOSITORY                          TAG       IMAGE ID       CREATED         SIZE
+ghcr.io/graalvm/jdk-community       23        cdcf77f22c9d   8 days ago      718MB
+docker/labs-k8s-toolkit-extension   0.0.46    fbbe16ec2589   14 months ago   128MB
+]
+
+[
 # With the -P or --publish-all flag, you can automatically publish all exposed ports to ephemeral ports. This is quite useful when you’re trying to avoid port conflicts in development or testing environments.
-# For example, the following command will publish all of the exposed ports configured by the image:
-docker run -P nginx
+# For example, the following command will publish all of the exposed ports configured by the image
+# % docker run -P nginx
 ]
 # --publish-all
 # Verify, start the container and enter a Bash session
 [
-% docker ps --all
 % docker run -it --publish-all --rm --entrypoint /bin/bash ghcr.io/graalvm/jdk-community:23
 % docker run -it -p 8000:80 --rm --entrypoint /bin/bash ghcr.io/graalvm/jdk-community:23
 ]
 % docker run -it --rm --entrypoint /bin/bash ghcr.io/graalvm/jdk-community:23
 
 # Terminal New Window
-% docker ps --all
+% docker container list --all
 [
-CONTAINER ID   IMAGE                              COMMAND       CREATED          STATUS          PORTS                  NAMES
-ac8bda4c3e29   ghcr.io/graalvm/jdk-community:23   "/bin/bash"   15 seconds ago   Up 14 seconds   0.0.0.0:8000->80/tcp   clever_brown
+CONTAINER ID   IMAGE                              COMMAND       CREATED              STATUS              PORTS     NAMES
+dd8b6256e335   ghcr.io/graalvm/jdk-community:23   "/bin/bash"   About a minute ago   Up About a minute             gifted_napier
+]
+
+% docker image list --all
+[
+REPOSITORY                          TAG       IMAGE ID       CREATED         SIZE
+ghcr.io/graalvm/jdk-community       23        cdcf77f22c9d   8 days ago      718MB
+docker/labs-k8s-toolkit-extension   0.0.46    fbbe16ec2589   14 months ago   128M
 ]
 
 # Original Terminal Window
 # java --version
-
+# jwebserver --version
+[
+openjdk 23.0.2 2025-01-21
+OpenJDK Runtime Environment GraalVM CE 23.0.2+7.1 (build 23.0.2+7-jvmci-b01)
+OpenJDK 64-Bit Server VM GraalVM CE 23.0.2+7.1 (build 23.0.2+7-jvmci-b01, mixed mode, sharing)
+]
 # cat /etc/os-release
 [
 NAME="Oracle Linux Server"
@@ -3446,19 +3394,17 @@ ANSI_COLOR="0;31"
 CPE_NAME="cpe:/o:oracle:linux:9:4:server"
 HOME_URL="https://linux.oracle.com/"
 BUG_REPORT_URL="https://github.com/oracle/oracle-linux"
-
 ORACLE_BUGZILLA_PRODUCT="Oracle Linux 9"
 ORACLE_BUGZILLA_PRODUCT_VERSION=9.4
 ORACLE_SUPPORT_PRODUCT="Oracle Linux"
 ORACLE_SUPPORT_PRODUCT_VERSION=9.4
 ]
-
+# arch
 # microdnf --help
 [
 # microdnf upgrade 
 # microdnf update 
 ]
-
 # env
 [
 HOSTNAME=8d82103dc8c3
@@ -3477,8 +3423,6 @@ _=/usr/bin/env
 # ls /usr/lib64/graalvm
 
 # ls /usr/lib64/graalvm/graalvm-community-java23/bin
-
-# /usr/lib64/graalvm/graalvm-community-java23/bin/jwebserver --version
 
 # jshell
 
@@ -3531,11 +3475,19 @@ _=/usr/bin/env
 # ls 
 # rm -rf *
 ]
-# mkdir -p sample && cd sample
+# mkdir -p sample
 
+# cd sample
+
+[
+Your Java runtime '23.0.2+7-jvmci-b01' with compiler version '24.1.2' is incompatible with polyglot version '24.1.1'.
+Update the org.graalvm.polyglot versions to at least '24.1.2' to resolve this.
+Alternatively, it is possible to switch to the fallback runtime with -Dtruffle.UseFallbackRuntime=true.
+The fallback runtime is compatible to any Java 17 capable JDK.
+]
+# 17
 # gradle init
 [
-
 Select type of build to generate:
   1: Application
   2: Library
@@ -3552,7 +3504,7 @@ Select implementation language:
   6: Swift
 Enter selection (default: Java) [1..6] 
 
-Enter target Java version (min: 7, default: 21): 23
+Enter target Java version (min: 7, default: 21): 17
 
 Project name (default: sample): 
 
@@ -3573,13 +3525,13 @@ Select test framework:
   4: JUnit Jupiter
 Enter selection (default: JUnit Jupiter) [1..4] 
 
-Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] yes
+Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] 
 
 
 > Task :init
 Learn more about Gradle by exploring our Samples at https://docs.gradle.org/8.12/samples/sample_building_java_applications.html
 
-BUILD SUCCESSFUL in 19s
+BUILD SUCCESSFUL in 12s
 1 actionable task: 1 executed
 ]
 
@@ -3677,7 +3629,6 @@ public class App {
  *
  * This generated file contains a sample Java application project to get you started.
  * For more details on building Java & JVM projects, please refer to https://docs.gradle.org/8.12/userguide/building_java_projects.html in the Gradle documentation.
- * This project uses @Incubating APIs which are subject to change.
  */
 
 plugins {
@@ -3691,30 +3642,30 @@ repositories {
 }
 
 dependencies {
+    // Use JUnit Jupiter for testing.
+    testImplementation(libs.junit.jupiter)
+
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
     // This dependency is used by the application.
     implementation(libs.guava)
-}
-
-testing {
-    suites {
-        // Configure the built-in test suite
-        val test by getting(JvmTestSuite::class) {
-            // Use JUnit Jupiter test framework
-            useJUnitJupiter("5.11.1")
-        }
-    }
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(23)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
 application {
     // Define the main class for the application.
     mainClass = "org.example.App"
+}
+
+tasks.named<Test>("test") {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
 }
 ]
 
@@ -3770,71 +3721,44 @@ application {
 Calculating task graph as no cached configuration is available for tasks: run
 
 > Task :app:run
-Hello from GraalJS!
-Hello World from Java
-Hola World from JS
 Hello World!
 
-BUILD SUCCESSFUL in 1s
-2 actionable tasks: 1 executed, 1 from cache
+BUILD SUCCESSFUL in 488ms
+2 actionable tasks: 2 executed
 Configuration cache entry stored.
 ]
 
+[
 # ./gradlew clean
+]
 
 # ./gradlew build
 
+# yes
 # ./gradlew build --scan
-[
-Reusing configuration cache.
-
-BUILD SUCCESSFUL in 471ms
-7 actionable tasks: 7 up-to-date
-
-Publishing a build scan to scans.gradle.com requires accepting the Gradle Terms of Use defined at https://gradle.com/help/legal-terms-of-use. Do you accept these terms? [yes, no] yes
-
-Gradle Terms of Use accepted.
-
-Publishing build scan...
-https://gradle.com/s/silywerzxogkg
-
-Configuration cache entry reused.
-]
-
-# ls build
-
-# ls build/reports
-
-# ls build/reports/configuration-cache
-[
-epdnhkg79ckvlf6ffg3wohyky
-]
-
-# rm -rf build/reports
-
-[
-# ls build/reports/configuration-cache/epdnhkg79ckvlf6ffg3wohyky
-90yloe4enl5jpoby8emw3xn86
-# ls build/reports/configuration-cache/epdnhkg79ckvlf6ffg3wohyky/90yloe4enl5jpoby8emw3xn86
-configuration-cache-report.html
-# ls build/reports/configuration-cache/epdnhkg79ckvlf6ffg3wohyky/90yloe4enl5jpoby8emw3xn86/configuration-cache-report.html
-]
 
 # jwebserver
+[
 Binding to loopback by default. For all interfaces use "-b 0.0.0.0" or "-b ::".
-Serving /app/GraalJS/sample and subdirectories on 127.0.0.1 port 8000
+Serving /app/GraalJS/sample/GraalJS/sample/app/build/reports/tests/test and subdirectories on 127.0.0.1 port 8000
 URL http://127.0.0.1:8000/
+]
 
 # Terminal New Window
-% docker ps --all
+% export PATH="/Applications/Docker.app/Contents/Resources/bin/:/Applications/Docker.app/Contents/Resources/cli-plugins/":$PATH
+
+% docker container list --all
 [
-CONTAINER ID   IMAGE                              COMMAND       CREATED          STATUS          PORTS                  NAMES
-ac8bda4c3e29   ghcr.io/graalvm/jdk-community:23   "/bin/bash"   50 minutes ago   Up 50 minutes   0.0.0.0:8000->80/tcp   clever_brown
+CONTAINER ID   IMAGE                              COMMAND       CREATED             STATUS             PORTS     NAMES
+dd8b6256e335   ghcr.io/graalvm/jdk-community:23   "/bin/bash"   About an hour ago   Up About an hour             gifted_napie
 ]
 
 # shell
-% docker exec -i -t clever_brown /bin/bash
-# curl http://127.0.0.1:8000/build/reports/configuration-cache/epdnhkg79ckvlf6ffg3wohyky/90yloe4enl5jpoby8emw3xn86/configuration-cache-report.html
+% docker exec -i -t  gifted_napier /bin/bash
+# curl http://127.0.0.1:8000/index.html
+# curl http://127.0.0.1:8000/packages/org.example.html
+# curl http://127.0.0.1:8000/classes/org.example.AppTest.html
+# exit
 ===========================================================================================================================
 
 # Java # WebAssembly (wasm) # GraalVM # GraalPy # Gradle # Kotlin
@@ -3849,15 +3773,12 @@ try (Context context = Context.create()) {
 }
 ]
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
 % mkdir -p GraalPy
 
 % cd GraalPy
 
-% export PATH="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home/bin/:$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
+# Java 23.0.2 # Gradle 8.12 # Apache Maven 3.9.9 
+% export PATH="$HOME/Downloads/Software/OpenJDK/JDK23.0.2/jdk-23.0.2.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
 
 % java --version
 
@@ -3912,7 +3833,6 @@ Select test framework:
 Enter selection (default: JUnit Jupiter) [1..4] 
 
 Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] yes
-
 
 > Task :init
 Learn more about Gradle by exploring our Samples at https://docs.gradle.org/8.12/samples/sample_building_java_applications.html
@@ -4153,34 +4073,14 @@ application {
 
 % ./gradlew build
 
+# yes
 % ./gradlew build --scan
 
-% ls
+% jwebserver --directory $(pwd)/app/build/reports/tests/test --port 8000
 
-% ls build
-
-% ls build/reports
-
-% ls build/reports/configuration-cache
-[
-2cwxuksyd46298v3rqxedy8lo	5h5cm2vrs47gr6tap3si24v3x	d2wej9704q6lwtv3r9a8aywwy
-3ite47822p8nmkjnoqzv5rwa1	5x6u6lss4bdllvcud4c6enwky
-]
-
-% ls build/reports/configuration-cache/2cwxuksyd46298v3rqxedy8lo
-[
-393dzv7bjf2telanpq126fhbf	8y67u4vipe1pb9au1f28exqc5
-]
-
-% ls build/reports/configuration-cache/2cwxuksyd46298v3rqxedy8lo/393dzv7bjf2telanpq126fhbf
-[
-configuration-cache-report.html
-]
-
-% jwebserver
-
-% New Terminal Window
-% open http://127.0.0.1:8000/build/reports/configuration-cache/2cwxuksyd46298v3rqxedy8lo/393dzv7bjf2telanpq126fhbf/configuration-cache-report.html
+# Terminal New Window
+% curl http://127.0.0.1:8000/
+% open http://127.0.0.1:8000/
 ===========================================================================================================================
 
 # Java # WebAssembly (wasm) # GraalVM # TruffleRuby # Gradle # Groovy
@@ -4201,15 +4101,12 @@ class Embedding {
 }
 ]
 ===========================================================================================================================
-[
-% cd $HOME
-]
+% mkdir -p GraalVMTruffleRuby
 
-% mkdir -p TruffleRuby
+% cd GraalVMTruffleRuby
 
-% cd TruffleRuby
-
-% export PATH="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-jdk-23.0.1+11.1/Contents/Home/bin/:$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
+# Java 23.0.2 # Gradle 8.12 # Apache Maven 3.9.9 
+% export PATH="$HOME/Downloads/Software/OpenJDK/JDK23.0.2/jdk-23.0.2.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
 
 % java --version
 
@@ -4263,7 +4160,6 @@ Select test framework:
 Enter selection (default: JUnit Jupiter) [1..4] 
 
 Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] yes
-
 
 > Task :init
 Learn more about Gradle by exploring our Samples at https://docs.gradle.org/8.12/samples/sample_building_java_applications.html
@@ -4503,72 +4399,49 @@ application {
 
 % ./gradlew build
 
+# yes
 % ./gradlew build --scan
 
-% ls
-
-% ls build
-
-% ls build/reports
-[
-configuration-cache	problems
-]
-
-% ls build/reports/configuration-cache
-[
-2cwxuksyd46298v3rqxedy8lo	3ite47822p8nmkjnoqzv5rwa1	5h5cm2vrs47gr6tap3si24v3x	d2wej9704q6lwtv3r9a8aywwy
-]
-
-% ls build/reports/problems
-[
-problems-report.html
-]
-
-% ls build/reports/configuration-cache/d2wej9704q6lwtv3r9a8aywwy
-[
-4cdgbn660ori2rt3q8ywu69jx
-]
-
-% ls build/reports/configuration-cache/d2wej9704q6lwtv3r9a8aywwy/4cdgbn660ori2rt3q8ywu69jx
-[
-configuration-cache-report.html
-]
-
-% ls build/reports/configuration-cache/d2wej9704q6lwtv3r9a8aywwy/4cdgbn660ori2rt3q8ywu69jx/configuration-cache-report.html
-
-% ls build/reports/problems/problems-report.html
-
-% jwebserver
+% jwebserver --directory $(pwd)/app/build/reports/tests/test --port 8000
 
 # Terminal New Window
-
+% curl http://127.0.0.1:8000/
 % open http://127.0.0.1:8000/
 ===========================================================================================================================
 
 # Java # WebAssembly (wasm) # GraalVM # Truffle # Espresso
 
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
 % mkdir -p Espresso
 
 % cd Espresso
 
-% wget https://gds.oracle.com/download/espresso/archive/espresso-java21-24.0.1-macos-aarch64.tar.gz
+% wget https://gds.oracle.com/download/espresso/archive/espresso-java21-24.0.1-macos-aarch64.tar.gz --directory-prefix="$HOME/Downloads/Software/Oracle/GraalVM"
 
-% tar -xzf espresso-java21-24.0.1-macos-aarch64.tar.gz
+% tar -xzf $HOME/Downloads/Software/Oracle/GraalVM/espresso-java21-24.0.1-macos-aarch64.tar.gz -C $HOME/Downloads/Software/Oracle/GraalVM
 
-% ls graalvm-espresso-jdk-21.0.1+11.1
+% ls $HOME/Downloads/Software/Oracle/GraalVM/graalvm-espresso-jdk-21.0.1+11.1
 
-% ls $HOME/Desktop//GitHub/JavaScript-1/WebAssembly/Java/Espresso/graalvm-espresso-jdk-21.0.1+11.1/Contents/Home/bin
+% ls $HOME/Downloads/Software/Oracle/GraalVM/graalvm-espresso-jdk-21.0.1+11.1/Contents/Home/bin
 
-% export PATH="$HOME/Desktop//GitHub/JavaScript-1/WebAssembly/Java/Espresso/graalvm-espresso-jdk-21.0.1+11.1/Contents/Home/bin/":$PATH
+% export PATH="$HOME/Downloads/Software/Oracle/GraalVM/graalvm-espresso-jdk-21.0.1+11.1/Contents/Home/bin/":$PATH
+
+% java --version
 
 % java -truffle -version
 
 % java -truffle --version
+
+% jshell
+[
+jshell> System.getProperty("java.version");
+System.getProperty("java.version")$1 ==> "21.0.1"
+jshell> System.getProperty("java.vendor.version");
+System.getProperty("java.vendor.version")$1 ==> "Oracle GraalVM 21.0.1+11.1"
+jshell> System.getProperty("java.vm.name");
+System.getProperty("java.vm.name")$1 ==> "Espresso 64-Bit VM"
+jshell> /exit
+]
 
 % mkdir -p JavaEspressoTruffle
 
@@ -4595,282 +4468,6 @@ class App {
 ]
 
 % java App.java
-
-===========================================================================================================================
-
-# Java # WebAssembly (wasm) # GraalVM # Truffle # Espresso # Spring Boot with Spring MVC and Spring Data JPA
-
-===========================================================================================================================
-[
-% cd $HOME
-]
-
-% cd Espresso
-
-% git clone https://github.com/spring-projects/spring-petclinic.git
-
-% cd spring-petclinic
-
-% ls src/main/resources/static/resources/images
-
-% open src/main/resources/static/resources/images/pets.png
-
-[
-wget -O pets.png "https://upload.wikimedia.org/wikipedia/en/5/50/Goofy_Duckipedia.png" && mv pets.png "src/main/resources/static/resources/images"
-]
-% curl --output pets.png "https://upload.wikimedia.org/wikipedia/en/5/50/Goofy_Duckipedia.png" --output-dir "src/main/resources/static/resources/images"
-
-% open src/main/resources/static/resources/images/pets.png
-
-% export PATH="$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home/bin/:$HOME/Downloads/Software/Gradle/gradle-8.12/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
-
-% java --version
-
-% mvn --version
-
-% ./mvnw package
-
-% jar --version
-
-% jar tvf target/spring-petclinic-3.4.0-SNAPSHOT.jar
-
-% java -jar target/spring-petclinic-3.4.0-SNAPSHOT.jar
-
-# Terminal New Window
-% curl http://localhost:8080/
-% open http://localhost:8080/
-
-# Original Terminal Window
-# Maven # Spring Boot Maven plugin
-% ./mvnw spring-boot:run
-
-
-# No dockerfile in this project
-# Build a container image (if you have a docker daemon) using the Spring Boot build plugin
-
-% docker --version
-
-% docker info
-
-# Docker # Spring Boot build plugin
-% ./mvnw spring-boot:build-image
-
-% docker ps --all
-[
-CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS                     PORTS     NAMES
-476b443adbd4   postgres:17.0   "docker-entrypoint.s…"   3 minutes ago   Exited (0) 2 minutes ago             spring-petclinic-postgres-1
-]
-
-# Database # MYSQL
-% docker run -e MYSQL_USER=petclinic -e MYSQL_PASSWORD=petclinic -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=petclinic -p 3306:3306 mysql:9.1
-
-# Database # POSTGRES
-% docker run -e POSTGRES_USER=petclinic -e POSTGRES_PASSWORD=petclinic -e POSTGRES_ROOT_PASSWORD=root -e POSTGRES_DATABASE=petclinic -p 5432:5432 postgres:17.0
-
-
-# Terminal New Window # MYSQL # REPL
-% docker ps --all
-[
-CONTAINER ID   IMAGE           COMMAND                  CREATED             STATUS                   PORTS                               NAMES
-447033bfb913   postgres:17.0   "docker-entrypoint.s…"   About an hour ago   Up About an hour         0.0.0.0:5432->5432/tcp              interesting_wu
-c6dd26924bd7   mysql:9.1       "docker-entrypoint.s…"   3 hours ago         Up 3 hours               0.0.0.0:3306->3306/tcp, 33060/tcp   relaxed_shaw
-476b443adbd4   postgres:17.0   "docker-entrypoint.s…"   3 hours ago         Exited (0) 3 hours ago                                       spring-petclinic-postgres-1
-]
-
-# Terminal New Window
-[
-% cd $HOME
-]
-
-% cd Espresso
-
-[
-% wget https://gds.oracle.com/download/espresso/archive/espresso-java21-24.0.1-macos-aarch64.tar.gz
-
-% tar -xzf espresso-java21-24.0.1-macos-aarch64.tar.gz
-
-% ls graalvm-espresso-jdk-21.0.1+11.1
-
-% ls $HOME/Desktop//GitHub/JavaScript-1/WebAssembly/Java/Espresso/graalvm-espresso-jdk-21.0.1+11.1/Contents/Home/bin
-]
-
-# https://github.com/spring-projects/spring-petclinic.git
-% wget --output-document=spring-petclinic-main.zip https://github.com/spring-projects/spring-petclinic/archive/main.zip
-
-% tar -xvzf spring-petclinic-main.zip
-
-[
-% cd spring-petclinic
-]
-% cd spring-petclinic-main
-
-% open src/main/resources/static/resources/images/pets.png
-
-[
-wget -O pets.png "https://upload.wikimedia.org/wikipedia/commons/6/64/Russian_space_dog_box.jpg" && mv pets.png "src/main/resources/static/resources/images"
-]
-% curl --output pets.png "https://upload.wikimedia.org/wikipedia/commons/6/64/Russian_space_dog_box.jpg" --output-dir "src/main/resources/static/resources/images"
-
-% open src/main/resources/static/resources/images/pets.png
-
-% export PATH="$HOME/Desktop//GitHub/JavaScript-1/WebAssembly/Java/Espresso/graalvm-espresso-jdk-21.0.1+11.1/Contents/Home/bin/:$HOME/Downloads/Software/ApacheMaven/apache-maven-3.9.9/bin/":$PATH
-
-% java --version
-[
-java 21.0.1 2023-10-17
-Java(TM) SE Runtime Environment Oracle GraalVM 21.0.1+11.1 (build 21.0.1+11-jvmci-23.1-b26)
-Espresso 64-Bit VM Oracle GraalVM 21.0.1+11.1 (build 21-espresso-24.0.1, mixed mode)
-]
-
-% mvn --version
-[
-Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
-Maven home: /Users/rajaniapple/Downloads/Software/ApacheMaven/apache-maven-3.9.9
-Java version: 21.0.1, vendor: Oracle Corporation, runtime: /Users/rajaniapple/Desktop/GitHub/JavaScript-1/WebAssembly/Java/Espresso/graalvm-espresso-jdk-21.0.1+11.1/Contents/Home
-Default locale: en_US, platform encoding: UTF-8
-OS name: "mac os x", version: "15.1", arch: "aarch64", family: "mac"
-]
-
-% java -truffle --version
-[
-java 21.0.1 2023-10-17
-Java(TM) SE Runtime Environment Oracle GraalVM 21.0.1+11.1 (build 21.0.1+11-jvmci-23.1-b26)
-Espresso 64-Bit VM Oracle GraalVM 21.0.1+11.1 (build 21-espresso-24.0.1, mixed mode)
-]
-
-% export JAVA_HOME="$HOME/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home"
-
-% java --version
-[
-java 21.0.1 2023-10-17
-Java(TM) SE Runtime Environment Oracle GraalVM 21.0.1+11.1 (build 21.0.1+11-jvmci-23.1-b26)
-Espresso 64-Bit VM Oracle GraalVM 21.0.1+11.1 (build 21-espresso-24.0.1, mixed mode)
-]
-
-% mvn --version
-[
-Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
-Maven home: /Users/rajaniapple/Downloads/Software/ApacheMaven/apache-maven-3.9.9
-Java version: 23.0.1, vendor: Oracle Corporation, runtime: /Users/rajaniapple/Downloads/Software/OpenJDK/JDK23.0.1/jdk-23.0.1.jdk/Contents/Home
-Default locale: en_US, platform encoding: UTF-8
-OS name: "mac os x", version: "15.1", arch: "aarch64", family: "mac"
-]
-
-% java -truffle --version
-[
-java 21.0.1 2023-10-17
-Java(TM) SE Runtime Environment Oracle GraalVM 21.0.1+11.1 (build 21.0.1+11-jvmci-23.1-b26)
-Espresso 64-Bit VM Oracle GraalVM 21.0.1+11.1 (build 21-espresso-24.0.1, mixed mode)
-]
-
-% ./mvnw clean
-
-[
-% ./mvnw spring-boot:run -Dspring-boot.run.profiles=mysql
-]
-% ./mvnw spring-boot:run -Dspring-boot.run.profiles=postgres
-
-mvnw spring-boot run Dspring-boot.run.profiles postgres
-
-# Terminal New Window # PostgreSQL # REPL
-[
-% psql -h localhost -p 5432 -U root
-]
-% psql -h localhost -p 5432 -U petclinic
-# SELECT version();
-
-# SELECT datname FROM pg_database
-WHERE datistemplate = false;
-
-# SELECT current_database();
-
-# SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';
- id | first_name  | last_name |        address        |    city     | telephone  
-----+-------------+-----------+-----------------------+-------------+------------
-  1 | George      | Franklin  | 110 W. Liberty St.    | Madison     | 6085551023
-  2 | Betty       | Davis     | 638 Cardinal Ave.     | Sun Prairie | 6085551749
-  3 | Eduardo     | Rodriquez | 2693 Commerce St.     | McFarland   | 6085558763
-  4 | Harold      | Davis     | 563 Friendly St.      | Windsor     | 6085553198
-  5 | Peter       | McTavish  | 2387 S. Fair Way      | Madison     | 6085552765
-  6 | Jean        | Coleman   | 105 N. Lake St.       | Monona      | 6085552654
-  7 | Jeff        | Black     | 1450 Oak Blvd.        | Monona      | 6085555387
-  8 | Maria       | Escobito  | 345 Maple St.         | Madison     | 6085557683
-  9 | David       | Schroeder | 2749 Blackhawk Trail  | Madison     | 6085559435
- 10 | Carlos      | Estaban   | 2335 Independence La. | Waunakee    | 6085555487
- 11 | Космическая | программа | Baikonur Cosmodrome   | Roskosmos   | 1960567890
-(11 rows)
-
-# SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';
- id | first_name | last_name |        address        |    city     | telephone  
-----+------------+-----------+-----------------------+-------------+------------
-  1 | George     | Franklin  | 110 W. Liberty St.    | Madison     | 6085551023
-  2 | Betty      | Davis     | 638 Cardinal Ave.     | Sun Prairie | 6085551749
-  3 | Eduardo    | Rodriquez | 2693 Commerce St.     | McFarland   | 6085558763
-  4 | Harold     | Davis     | 563 Friendly St.      | Windsor     | 6085553198
-  5 | Peter      | McTavish  | 2387 S. Fair Way      | Madison     | 6085552765
-  6 | Jean       | Coleman   | 105 N. Lake St.       | Monona      | 6085552654
-  7 | Jeff       | Black     | 1450 Oak Blvd.        | Monona      | 6085555387
-  8 | Maria      | Escobito  | 345 Maple St.         | Madison     | 6085557683
-  9 | David      | Schroeder | 2749 Blackhawk Trail  | Madison     | 6085559435
- 10 | Carlos     | Estaban   | 2335 Independence La. | Waunakee    | 6085555487
- 11 | Sputnik    | Спутник   | Baikonur Cosmodrome   | Roskosmos   | 7654321098
-(11 rows)
-
-# Terminal New Window
-% curl http://localhost:8080/
-% open http://localhost:8080/
-
-# Terminal New Window # MYSQL # REPL # MYSQL_ROOT_PASSWORD=root
-% mysqlsh     
-> SELECT VERSION();
-
-> SHOW DATABASES;
-
-> USE petclinic
-
-> SHOW TABLES;
-
-> SELECT * FROM owners;
-[
-+----+------------+-----------+-----------------------+---------------+------------+
-| id | first_name | last_name | address               | city          | telephone  |
-+----+------------+-----------+-----------------------+---------------+------------+
-|  1 | George     | Franklin  | 110 W. Liberty St.    | Madison       | 6085551023 |
-|  2 | Betty      | Davis     | 638 Cardinal Ave.     | Sun Prairie   | 6085551749 |
-|  3 | Eduardo    | Rodriquez | 2693 Commerce St.     | McFarland     | 6085558763 |
-|  4 | Harold     | Davis     | 563 Friendly St.      | Windsor       | 6085553198 |
-|  5 | Peter      | McTavish  | 2387 S. Fair Way      | Madison       | 6085552765 |
-|  6 | Jean       | Coleman   | 105 N. Lake St.       | Monona        | 6085552654 |
-|  7 | Jeff       | Black     | 1450 Oak Blvd.        | Monona        | 6085555387 |
-|  8 | Maria      | Escobito  | 345 Maple St.         | Madison       | 6085557683 |
-|  9 | David      | Schroeder | 2749 Blackhawk Trail  | Madison       | 6085559435 |
-| 10 | Carlos     | Estaban   | 2335 Independence La. | Waunakee      | 6085555487 |
-| 11 | Espresso   | Goofy     | The Great Highway     | San Francisco | 1234567890 |
-+----+------------+-----------+-----------------------+---------------+------------+
-11 rows in set (0.0052 sec)
-]
-
-> SELECT * FROM owners;
-[
-#  MySQL  localhost:3306 ssl  petclinic  SQL > SELECT * FROM owners;
-+----+-----------------+-------------+-----------------------+---------------+------------+
-| id | first_name      | last_name   | address               | city          | telephone  |
-+----+-----------------+-------------+-----------------------+---------------+------------+
-|  1 | George          | Franklin    | 110 W. Liberty St.    | Madison       | 6085551023 |
-|  2 | Betty           | Davis       | 638 Cardinal Ave.     | Sun Prairie   | 6085551749 |
-|  3 | Eduardo         | Rodriquez   | 2693 Commerce St.     | McFarland     | 6085558763 |
-|  4 | Harold          | Davis       | 563 Friendly St.      | Windsor       | 6085553198 |
-|  5 | Peter           | McTavish    | 2387 S. Fair Way      | Madison       | 6085552765 |
-|  6 | Jean            | Coleman     | 105 N. Lake St.       | Monona        | 6085552654 |
-|  7 | Jeff            | Black       | 1450 Oak Blvd.        | Monona        | 6085555387 |
-|  8 | Maria           | Escobito    | 345 Maple St.         | Madison       | 6085557683 |
-|  9 | David           | Schroeder   | 2749 Blackhawk Trail  | Madison       | 6085559435 |
-| 10 | Carlos          | Estaban     | 2335 Independence La. | Waunakee      | 6085555487 |
-| 11 | Espresso Spring | Boot  Goofy | The Great Highway     | San Francisco | 1234567890 |
-+----+-----------------+-------------+-----------------------+---------------+------------+
-11 rows in set (0.0052 sec)
-]
-===========================================================================================================================
 ***************************************************************************************************************************
 
 
@@ -4913,10 +4510,6 @@ WHERE datistemplate = false;
 # CS # WebAssembly (wasm) # dotnet # wasmbrowser # Node.js # wasmconsole
 
 ***************************************************************************************************************************
-[
-% cd $HOME
-]
-
 % mkdir -p CS
 
 % cd CS
@@ -5070,8 +4663,6 @@ export function math(x, y) {
 ]
 
 [
-% cd $HOME
-
 % cp -r Wasm/bin/Release/net9.0 WasmRelease
 
 % cp Wasm/wwwroot/* WasmRelease/wwwroot
@@ -5132,10 +4723,6 @@ export function math(x, y) {
 # CS # WebAssembly (wasm) # dotnet # wasmbrowser
 
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
 % dotnet --version
 
 # CS # WebAssembly (wasm) # dotnet # wasmbrowser
@@ -5163,10 +4750,6 @@ export function math(x, y) {
 # CS # WebAssembly (wasm) # dotnet # wasmconsole # Node.js
 
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
 % dotnet --version
 
 # CS # WebAssembly (wasm) # dotnet # wasmconsole # Node.js
@@ -5211,10 +4794,6 @@ Hello, Console!
 # FS # WebAssembly (wasm) # Bolero
 
 ***************************************************************************************************************************
-[
-% cd $HOME
-]
-
 % mkdir -p FS
 
 % cd FS
@@ -5306,10 +4885,6 @@ sign in
 # Ruby # WebAssembly (wasm) # Browser
 
 ===========================================================================================================================
-[
-% cd $HOME
-]
-
 % mkdir -p Ruby
 
 % cd Ruby
@@ -5576,10 +5151,6 @@ rand.to_f # => 0.123456789
 
 ===========================================================================================================================
 # Package Ruby application as a WASI application
-[
-% cd $HOME
-]
-
 % mkdir -p Ruby
 
 % cd Ruby
@@ -5619,10 +5190,6 @@ rand.to_f # => 0.123456789
 % curl https://wasmtime.dev/install.sh -sSf | bash
 
 # Terminal New Window
-[
-% cd $HOME
-]
-
 % wasmtime wasi-ruby-app.wasm /src/wasi_app.rb
 [
 Ruby: ruby 3.3.3 (2024-06-12 revision f1c7b6f435) [wasm32-wasi]
@@ -5714,6 +5281,9 @@ https://php.net/
 https://gcc.gnu.org/
 https://maven.apache.org/
 https://gradle.org/
+https://gradle.com/
+https://groovy-lang.org/
+https://kotlinlang.org/
 https://docker.com/
 https://toml.io/
 */
