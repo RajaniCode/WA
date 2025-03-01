@@ -141,6 +141,8 @@ Credits/php.net.svg)](https://php.net/)
 [![image](
 Credits/gcc.gnu.org.svg)](https://gcc.gnu.org/)  
 [![image](
+Credits/scala-js.org.svg)](https://scala-js.org/)  
+[![image](
 Credits/getbootstrap.com.svg)](https://getbootstrap.com/)  
 [![image](
 Credits/linuxcontainers.org.svg)](https://linuxcontainers.org/)  
